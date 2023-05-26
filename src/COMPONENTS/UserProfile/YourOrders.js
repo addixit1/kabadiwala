@@ -10,7 +10,7 @@ const YourOrders = () => {
         {
             id: 112345,
             date: '12/12/2021',
-            status: 'Delivered',
+            status: 'Pickup',
             total: 1000
         },
         {
@@ -22,7 +22,7 @@ const YourOrders = () => {
         {
             id: 112347,
             date: '12/12/2021',
-            status: 'Delivered',
+            status: 'Pickup',
             total: 2000
         },
         {
@@ -34,7 +34,7 @@ const YourOrders = () => {
         {
             id: 112345,
             date: '12/12/2021',
-            status: 'Delivered',
+            status: 'Pickup',
             total: 1000
         },
         {
@@ -46,7 +46,7 @@ const YourOrders = () => {
         {
             id: 112347,
             date: '12/12/2021',
-            status: 'Delivered',
+            status: 'Pickup',
             total: 2000
         },
         {
@@ -83,7 +83,7 @@ const YourOrders = () => {
                                 <td data-label='OrderDate'>{item.date}</td>
                                 <td data-label='Delivery Status'>
                                     <div>
-                                        {item.status == 'Delivered' && <span className='greendot'></span>}
+                                        {item.status == 'Pickup' && <span className='greendot'></span>}
                                         {item.status == 'On the way' && <span className='yellowdot'></span>}
                                         {item.status == 'Cancelled' && <span className='reddot'></span>}
                                         {item.status}
